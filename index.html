@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quran Recitation Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Quran Recitation Practice</h1>
+  <h2>إِنَّا نَحْنُ نَزَّلْنَا ٱلذِّكْرَ وَإِنَّا لَهُۥ لَحَـٰفِظُونَ</h2>
+  <h2>It is certainly We Who have revealed the Reminder, and it is certainly We Who will preserve it.</h2>
+  
+  <form id="quranForm">
+    <label for="surah">Choose Surah:</label>
+    <select id="surah" required></select>
+    
+    <button id="submitForm" type="submit">Ready to Test</button>
+  </form>
+
+  <div id="verseContainer" class="verse-box" style="display:none;">
+    <h3>Read the Ayat and Listen to it carefully !! Click on Ready to Test When Ready</h3>
+    <div class="arabic" id="arabicText"></div>
+    <div class="translation" id="translationText"></div>
+    <audio id="ayahAudio" controls></audio>
+    <br>
+    <button id="reciteBtn">Recite Next Ayah</button>
+    <button id="stopReciteBtn" style="display:none;">Stop Recording</button>
+    <!-- <audio id="userAudio" controls></audio> -->
+
+    <div id="result"></div>
+  </div>
+
+
+
+  <!-- <footer style="position:fixed; bottom:0; left:0; width:100%; margin-top:40px; padding:18px 0; background:#e0f2f1; border-radius:12px 12px 0 0; box-shadow:0 -2px 8px #b2dfdb22; color:#388e3c; font-size:1rem; z-index:100;">
+    &copy; 2024 Quran Recitation Practice &mdash; Made with <span style="color:#e57373;">&#10084;</span> By <a href="https://arkalsekar.in">Abdul Rehman Kalsekar</a>
+  </footer> -->
+  <script src="script.js"></script>
+
+</body>
+</html>
